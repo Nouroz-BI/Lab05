@@ -1,0 +1,50 @@
+# AIGC 5500 - Lab 05: Attention Against Recurrence
+
+**Student:** Nouroz Ali
+**Student ID:** N10037086
+
+## Introduction
+
+In this lab, I compared attention and LSTM models. I also tested positional information, different normalization methods, and model runtime.
+
+## Files
+
+- `lab05_starter.py` — Provides the tasks and training functions.
+- `attention.py` — Implements scaled dot-product attention and multi-head attention.
+- `recall.py` — Compares attention and LSTM on the recall task.
+- `order.py` — Tests positional information on the order task.
+- `part4.py` — Compares normalization methods and runtime.
+- `plot_results.py` — Creates charts from the saved results.
+- `requirements.txt` — Lists the main Python packages.
+
+## How to Run
+
+Run these files from the project folder, using the same Python environment:
+
+1. `attention.py`
+2. `recall.py`
+3. `order.py`
+4. `part4.py`
+5. `plot_results.py`
+
+The experiment scripts save their results in CSV files. The plotting script uses those CSV files to create charts.
+
+## Results and Discussion
+
+Complete this section after running the experiments.
+
+### Recall Task
+
+Compare attention and LSTM accuracy at sequence lengths 30, 100, and 400. Explain which model handled longer sequences better.
+
+### Order Task
+
+Compare models with no positional information, learned positions, and sinusoidal positions. Discuss what happened when the test sequence was longer than the training sequence.
+
+### Normalization and Runtime
+
+Compare pre-normalization and post-normalization. Then compare the measured runtime of LSTM and attention at different sequence lengths.
+
+## Conclusion
+
+Write a short conclusion based on the results you actually measured. Explain what you learned about attention, recurrence, positional information, and runtime.
